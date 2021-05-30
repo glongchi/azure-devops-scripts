@@ -3,15 +3,12 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "hostingPlanName": {
-        "type": "string",
         "value": "psdeploymentsampleappsvcplan"
       },
       "websiteName": {
-        "type": "string",
         "value": "psdeploymentsampleappsvc"
       },
       "apikey": {
-        "type": "string",
         "value": "Set in Parameters File"
       }
     }
