@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "hostingPlanName": {
-        "value": "psdeploymentsampleappsvcplan"
+        "value": "koomzoappsvcplan"
       },
       "websiteName": {
-        "value": "psdeploymentsampleappsvc"
+        "value": "koomzoappsvc"
       },
       "apikey": {
         "value": "Set in Parameters File"
