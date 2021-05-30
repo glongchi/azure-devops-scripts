@@ -1,6 +1,7 @@
 #!/bin/bash
 # aks-acr-101.sh
-  
+#link01:https://roykim.ca/2020/12/27/az-cli-script-to-create-a-starter-aks-demo/
+#link02:https://roykim.ca/2020/12/27/az-cli-script-to-create-a-starter-aks-demo/  
 az account show -o table
 az account list -o table
 az account set -s 'Pay-As-You-Go'
@@ -39,4 +40,6 @@ az aks get-credentials -n $aksName -g $rgName
  
 az aks show  -n $aksName -g $rgName
 
-kubectl create -f https://dev.azure.com/koomzo/azure%20consulting/_apis/sourceProviders/TfsGit/filecontents?repository=aksacr101&commitOrBranch=master&api-version=5.0-preview.1&path=%2Faksacr101%2Fdeployaks101.yaml
+# kubectl apply -f 'https://dev.azure.com/koomzo/azure%20consulting/_apis/sourceProviders/TfsGit/filecontents?repository=aksacr101&commitOrBranch=master&api-version=5.0-preview.1&path=%2Faksacr101%2Fdeployaks101.yaml'
+#kubectl apply -f https://dev.azure.com/koomzo/azure%20consulting/_apis/sourceProviders/TfsGit/filecontents?repository=aksacr101&commitOrBranch=master&path=%2Faksacr101%2Fdeployaks101.yaml
+kubectl apply -f https://raw.githubusercontent.com/glongchi/aksacr101/master/aksacr101/deployaks101.yaml
